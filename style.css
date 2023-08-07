@@ -1,0 +1,301 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: 0;
+}
+
+.FontColorTitle{
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.ScrollToTop{
+  display: flex;
+  flex-flow: row-reverse wrap;
+}
+
+.scroll-top{
+  background-color: #2a2d39;
+  border: 1px solid black;
+  height: max-content;
+  width: max-content;
+  position: fixed; 
+  bottom: 30px;
+  border-radius: 20px;
+  z-index:5;
+}
+
+.last-btn{
+  padding: 10px;
+  color:black;
+}
+
+.FontColor{
+    color: black;
+}
+
+button {
+  width:180px;
+  height: 56px;
+  overflow: hidden;
+  border: none;
+  color: aliceblue;
+  background: none;
+  position: relative;
+  padding-bottom: 2em;
+}
+
+button > div,button > svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  background: currentColor;
+  transition: transform 0.25s ease-out;
+}
+
+button:hover:before {
+  transform: scaleX(1);
+  width: 125px;
+  transform-origin: bottom left;
+}
+
+button .clone > *,button .text > * {
+  opacity: 1;
+  font-size: 1.3rem;
+  transition: 0.2s ease-in-out;
+  margin-left: 4px;
+}
+
+button .clone > * {
+  transform: translateY(40px);
+}
+
+button:hover .clone > * {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+button:hover .text > * {
+  opacity: 1;
+  transform: translateY(-60px);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+button:hover .clone > :nth-child(1) {
+  transition-delay: 0.15s;
+}
+
+button:hover .clone > :nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+button:hover .clone > :nth-child(3) {
+  transition-delay: 0.25s;
+}
+
+button:hover .clone > :nth-child(4) {
+  transition-delay: 0.3s;
+}
+/* icon style and hover */
+button svg {
+  width: 20px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(-50deg);
+  transition: 0.2s ease-out;
+}
+
+button:hover svg {
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+.TitleName{
+  display: grid;
+  position: relative;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.home-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NavTop{
+  height:max-content;
+  width: 100%;
+  background-color: #2a2d39;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-img{
+  order: 1;
+}
+
+.cenbtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ProjectPreview{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-title-Pro{
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Roboto Slab', serif;
+}
+
+.home-title-Name{
+  font-size: 55px;
+  font-weight: 600;
+  font-family: 'Merriweather', serif;
+}
+
+.my-img{
+  border-radius: 15%;
+}
+
+.TopDiv2{
+  background-image: url(./Images/TitleDivBG.avif);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode:overlay;
+  background-repeat: no-repeat;
+}
+
+.HRline{
+  border: solid 2px;
+  border-color: black;
+}
+
+.home-title-loc{
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Roboto Slab', serif;
+}
+
+.AboutMeDiv{
+  height: max-content;
+  /* background-color: #2a2d39; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AboutmeText{
+  font-size: 35px;
+  font-weight: 600;
+  color: aliceblue;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+}
+
+.Aboutmeintro{
+  font-size: 15px;
+  font-weight: 600;
+  color: whitesmoke;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+}
+
+.AboutimgDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #2a2d39; */
+}
+
+.Aboutimg{
+  border-radius: 10%;
+}
+
+.AboutBGdiv{
+  background-image: url(./Images/WebDivBG.avif);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode:overlay;
+  background-repeat: no-repeat;
+}
+
+.AboutTextDiv{
+  /* background-color: #2a2d39; */
+  color: aliceblue;
+  font-size: large;
+  text-align: justify;
+}
+
+.ProjectsDiv{
+  background-image: url(./Images/Projects\ Div.jpg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode:overlay;
+  background-repeat: no-repeat;
+}
+
+.ProjectsDiv h2{
+  color: black;
+  font-weight: 600;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+}
+
+.ProjectsDiv h5{
+  color: black;
+  font-weight: 600;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+}
+
+.EducationDiv{
+  background-image: url(./Images/WebDivBG.avif);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode:overlay;
+  background-repeat: no-repeat;
+}
+
+.BClgname{
+  color: aliceblue;
+  font-weight: 600;
+  font-size: 20px;
+  float: left;
+}
+
+.contimg{
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.copyright {
+  text-align: center;
+  color: #fff;
+}
+.copyright a {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
